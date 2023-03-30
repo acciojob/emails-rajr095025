@@ -42,3 +42,20 @@ public class Main {
 
     }
 }
+/*
+
+Accio@123
+Accio@123
+V12@v123
+Total 2 mails in inbox.
+There are 2 mails between given dates!
+The latest message is :Assignment to be uploaded on database.
+There are 3 mails in the trash.
+There are 0 mails in the trash.
+Inbox capacity is 2147483647 in workspace.
+Maximum meetings you can attend in a day is 3
+
+Process finished with exit code 0
+
+
+ */
