@@ -8,8 +8,11 @@ public class Main {
     public static void main(String[] args) throws ParseException {
         Email email = new Email("accio@gmail.com");
         email.changePassword("Accio@123", "V12@");
+        System.out.println(email.getPassword());
         email.changePassword("Acio@123", "V12@v");
+        System.out.println(email.getPassword());
         email.changePassword("Accio@123", "V12@v123");
+        System.out.println(email.getPassword());
 
         Gmail gmail = new Gmail("accio@gmail.com", 3);
         gmail.receiveMail(new SimpleDateFormat("dd/MM/yyyy").parse("21/12/2022"), "Tushar", "Assignment Completed?");
@@ -26,6 +29,7 @@ public class Main {
         gmail.emptyTrash();
         System.out.println("There are " + gmail.getTrashSize() + " mails in the trash.");
 
+
         Workspace workspace = new Workspace("accio@gmail.com");
         System.out.println("Inbox capacity is " + workspace.getInboxCapacity() + " in workspace.");
 
@@ -34,5 +38,7 @@ public class Main {
         workspace.addMeeting(new Meeting(LocalTime.parse("18:20"), LocalTime.parse("19:10")));
         workspace.addMeeting(new Meeting(LocalTime.parse("19:50"), LocalTime.parse("21:05")));
         System.out.println("Maximum meetings you can attend in a day is " + workspace.findMaxMeetings());
+
+
     }
 }
